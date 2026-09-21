@@ -1,0 +1,16 @@
+{
+  "name": "adamekka-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vp dev",
+    "build": "vp build",
+    "preview": "vp preview",
+    "check": "vp check",
+    "test": "vp test run"
+  },
+  "devDependencies": {
+    "vite-plus": "0.3.3"
+  },
+  "packageManager": "bun@1.4.2"
+}

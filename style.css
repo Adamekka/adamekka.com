@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "UbuntuMono Nerd Font";
+  src: url("/fonts/UbuntuMonoNerdFont-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  --background: #282a36;
+  --foreground: #f8f8f2;
+  --accent: #8be9fd;
+  color-scheme: dark;
+  font-family: "UbuntuMono Nerd Font", monospace;
+  color: var(--foreground);
+  background: var(--background);
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: min(100% - 3rem, 35rem);
+  margin: clamp(4rem, 14vh, 9rem) auto 4rem;
+}
+
+header {
+  margin-bottom: 5rem;
+}
+
+.handle,
+h2,
+.year-heading {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--foreground) 65%, var(--background));
+}
+
+.handle {
+  margin: 0 0 0.875rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 8vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.bio {
+  margin: 1.25rem 0 0;
+  font-size: 1.125rem;
+  color: color-mix(in srgb, var(--foreground) 75%, var(--background));
+}
+
+section + section {
+  margin-top: 3.5rem;
+}
+
+h2,
+.year-heading {
+  margin: 0 0 1.25rem;
+}
+
+.project {
+  border-top: 1px solid color-mix(in srgb, var(--foreground) 20%, var(--background));
+  padding: 1.25rem 0;
+}
+
+.project:last-child {
+  border-bottom: 1px solid color-mix(in srgb, var(--foreground) 20%, var(--background));
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.work,
+.project p {
+  margin: 0.625rem 0 0;
+  color: color-mix(in srgb, var(--foreground) 65%, var(--background));
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent) 40%, var(--background));
+  text-underline-offset: 0.3em;
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+  border-radius: 1px;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.contacts .username {
+  color: color-mix(in srgb, var(--foreground) 65%, var(--background));
+}
